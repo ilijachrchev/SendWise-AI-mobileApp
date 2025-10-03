@@ -8,6 +8,13 @@ module.exports = {
     // "./components/**/*.{js,jsx,ts,tsx}",
     // "./src/**/*.{js,jsx,ts,tsx}",
   ],
-  theme: { extend: {} },
+  theme: { extend: {
+    fontFamily: {
+      tektur:['Tektur_400Regular'],
+      tekturbold:['Tektur_700Bold'],
+    },
+
+    },
+  },
   plugins: [],
 };

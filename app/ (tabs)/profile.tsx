@@ -4,7 +4,7 @@ import ProfileCard from '../../maincomponents/ProfileCard'
 
 export default function Profile() {
     return (
-        <View className='flex-1 bg-blue-300 justify-center items-center '>
+        <View className='flex-1 bg-[#060014] justify-center items-center '>
 
            <ProfileCard />
 
