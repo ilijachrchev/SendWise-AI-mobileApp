@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6edd6109-e812-4ee2-a6c3-55832cc27589" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="32n0NFf3GSjs7SURvCwmaqtd3YC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/zlatanoski/WebstormProjects/app-FlowTrack",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "/home/zlatanoski/WebstormProjects/app-FlowTrack/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.26927.40" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6edd6109-e812-4ee2-a6c3-55832cc27589" name="Changes" comment="" />
+      <created>1758040986550</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758040986550</updated>
+      <workItem from="1758040987580" duration="1905000" />
+      <workItem from="1758064094669" duration="2634000" />
+      <workItem from="1758101029168" duration="7228000" />
+      <workItem from="1758120650812" duration="14509000" />
+      <workItem from="1758225251534" duration="1227000" />
+      <workItem from="1758226486033" duration="6780000" />
+      <workItem from="1758919749956" duration="3319000" />
+      <workItem from="1758972448301" duration="14029000" />
+      <workItem from="1759146201731" duration="4604000" />
+      <workItem from="1759152478710" duration="385000" />
+      <workItem from="1759237656899" duration="5836000" />
+      <workItem from="1759523204136" duration="5571000" />
+      <workItem from="1759875095576" duration="2601000" />
+      <workItem from="1759931669117" duration="879000" />
+      <workItem from="1759945367166" duration="7222000" />
+      <workItem from="1760106383391" duration="4433000" />
+      <workItem from="1760116812433" duration="627000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
