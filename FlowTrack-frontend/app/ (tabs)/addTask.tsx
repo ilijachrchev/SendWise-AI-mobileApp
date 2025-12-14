@@ -3,7 +3,7 @@ import {FlatList, Text, View, useWindowDimensions ,Platform} from 'react-native'
 import {AddSkillCard} from "../reusableComponents/addSkillCard";
 import {ProfileSettingButton} from "@/app/reusableComponents/ProfileSettingButton";
 import {User} from "lucide-react-native";
-
+import AppointmentButtonCard from "@/app/reusableComponents/AppointmentButtonCard";
 const DATA = ["Instrument","Language","Math","Sport"]
 
 
@@ -39,6 +39,7 @@ export default function AddTask() {
                 )} scrollEnabled={false} showsVerticalScrollIndicator={false} contentContainerStyle={{paddingVertical:gap}} />
                 </View>
                 <ProfileSettingButton icon = { <User size = { 18 } color = " #3B82F6 " strokeWidth = { 2 } /> } label = " Edit Profile " onPress = { ( ) => console . log ( 'Edit Profile pressed' ) } />
+                <AppointmentButtonCard/>
             </View>
         );
     }
