@@ -12,7 +12,19 @@ interface QuickActionItem {
     onPress: () => void;
 }
 
-const QuickActions = () => {
+interface QuickActionsProps {
+    onMessagePress?: () => void;
+    onAppointmentPress?: () => void;
+    onContactPress?: () => void;
+    onCampaignPress?: () => void;
+}
+
+const QuickActions: React.FC<QuickActionsProps> = ({
+                                                       onMessagePress,
+                                                       onAppointmentPress,
+                                                       onContactPress,
+                                                       onCampaignPress,
+                                                   }) => {
     const quickActions: QuickActionItem[] = [
         {
             id: 'messages',
@@ -21,7 +33,7 @@ const QuickActions = () => {
             icon: MessageSquare,
             iconColor: '#3B82F6',
             iconBgClass: 'bg-blue-100',
-            onPress: () => console.log('Messages pressed'),
+            onPress: onMessagePress || (() => console.log('Messages pressed')),
         },
         {
             id: 'appointments',
@@ -30,7 +42,7 @@ const QuickActions = () => {
             icon: Calendar,
             iconColor: '#8B5CF6',
             iconBgClass: 'bg-purple-100',
-            onPress: () => console.log('Appointments pressed'),
+            onPress: onAppointmentPress || (() => console.log('Appointments pressed')),
         },
         {
             id: 'contacts',
@@ -39,7 +51,7 @@ const QuickActions = () => {
             icon: Users,
             iconColor: '#10B981',
             iconBgClass: 'bg-emerald-100',
-            onPress: () => console.log('Contacts pressed'),
+            onPress: onContactPress || (() => console.log('Contacts pressed')),
         },
         {
             id: 'campaigns',
@@ -48,13 +60,13 @@ const QuickActions = () => {
             icon: TrendingUp,
             iconColor: '#F59E0B',
             iconBgClass: 'bg-amber-100',
-            onPress: () => console.log('Campaigns pressed'),
+            onPress: onCampaignPress || (() => console.log('Campaigns pressed')),
         },
     ];
 
     return (
-        <View className="w-full px-5">
-            <Text className="text-lg font-bold text-white mb-4">
+        <View className="w-full px-4">
+            <Text className="text-base font-bold text-black mb-3">
                 Quick Actions
             </Text>
 
@@ -66,21 +78,21 @@ const QuickActions = () => {
                         return (
                             <Pressable
                                 key={action.id}
-                                className="w-[48%] bg-gray-50 rounded-2xl p-5 items-start shadow-sm active:opacity-70"
+                                className="w-[48%] bg-gray-50 rounded-2xl p-4 items-start active:opacity-70"
                                 onPress={action.onPress}
                             >
-                                <View className={`w-12 h-12 rounded-xl items-center justify-center mb-3 ${action.iconBgClass}`}>
+                                <View className={`w-10 h-10 rounded-xl items-center justify-center mb-3 ${action.iconBgClass}`}>
                                     <IconComponent
-                                        size={24}
+                                        size={20}
                                         color={action.iconColor}
                                         strokeWidth={2}
                                     />
                                 </View>
 
-                                <Text className="text-base font-semibold text-gray-900 mb-1">
+                                <Text className="text-sm font-semibold text-black mb-0.5">
                                     {action.title}
                                 </Text>
-                                <Text className="text-[13px] font-normal text-gray-500">
+                                <Text className="text-xs text-gray-500">
                                     {action.subtitle}
                                 </Text>
                             </Pressable>
@@ -95,21 +107,21 @@ const QuickActions = () => {
                         return (
                             <Pressable
                                 key={action.id}
-                                className="w-[48%] bg-gray-50 rounded-2xl p-5 items-start shadow-sm active:opacity-70"
+                                className="w-[48%] bg-gray-50 rounded-2xl p-4 items-start active:opacity-70"
                                 onPress={action.onPress}
                             >
-                                <View className={`w-12 h-12 rounded-xl items-center justify-center mb-3 ${action.iconBgClass}`}>
+                                <View className={`w-10 h-10 rounded-xl items-center justify-center mb-3 ${action.iconBgClass}`}>
                                     <IconComponent
-                                        size={24}
+                                        size={20}
                                         color={action.iconColor}
                                         strokeWidth={2}
                                     />
                                 </View>
 
-                                <Text className="text-base font-semibold text-gray-900 mb-1">
+                                <Text className="text-sm font-semibold text-black mb-0.5">
                                     {action.title}
                                 </Text>
-                                <Text className="text-[13px] font-normal text-gray-500">
+                                <Text className="text-xs text-gray-500">
                                     {action.subtitle}
                                 </Text>
                             </Pressable>
