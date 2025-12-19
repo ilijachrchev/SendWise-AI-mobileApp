@@ -73,7 +73,7 @@ export default function HomeScreen() {
                         onMessagePress={() => router.push('/messages')}
                         onAppointmentPress={() => router.push('/appointmentsScreen')}
                         onContactPress={() => router.push('/appointmentsDetailsScreen')}
-                        onCampaignPress={() => router.push('/campaigns')}
+                        onCampaignPress={() => router.push('/profileScreen')}
                     />
                 </View>
 

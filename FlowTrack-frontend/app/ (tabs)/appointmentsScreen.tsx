@@ -16,7 +16,11 @@ const AppointmentsScreen = () => {
             time: '2:00 PM',
             status: 'pending',
             initials: 'SJ',
-            bgColor: 'bg-indigo-500'
+            bgColor: 'bg-indigo-500',
+            phone: '+1 (555) 123-4567',
+            email: 'sarah.johnson@email.com',
+            location: 'Video Call (Zoom)',
+            notes: 'Client interested in enterprise pricing. Follow up on previous demo feedback.'
         },
         {
             id: '2',
@@ -26,7 +30,11 @@ const AppointmentsScreen = () => {
             time: '4:30 PM',
             status: 'approved',
             initials: 'MP',
-            bgColor: 'bg-indigo-500'
+            bgColor: 'bg-indigo-500',
+            phone: '+1 (555) 234-5678',
+            email: 'mike.peters@email.com',
+            location: 'Office - Room 302',
+            notes: 'Reviewing project progress and next steps for Q1 implementation.'
         },
         {
             id: '3',
@@ -36,7 +44,11 @@ const AppointmentsScreen = () => {
             time: '10:00 AM',
             status: 'pending',
             initials: 'EW',
-            bgColor: 'bg-indigo-500'
+            bgColor: 'bg-indigo-500',
+            phone: '+1 (555) 345-6789',
+            email: 'emma.wilson@email.com',
+            location: 'Video Call (Google Meet)',
+            notes: 'Product demo for new features. Prepare presentation slides.'
         },
         {
             id: '4',
@@ -45,18 +57,26 @@ const AppointmentsScreen = () => {
             date: 'Dec 13',
             time: '10:50 AM',
             status: 'pending',
-            initials: 'EW',
-            bgColor: 'bg-indigo-500'
+            initials: 'DC',
+            bgColor: 'bg-indigo-500',
+            phone: '+1 (555) 456-7890',
+            email: 'david.connor@email.com',
+            location: 'Conference Room A',
+            notes: 'Quarterly performance review and goal setting for next quarter.'
         },
         {
             id: '5',
             name: 'Max Payne',
             type: 'Demo',
             date: 'Dec 14',
-            time: '12:00 AM',
+            time: '12:00 PM',
             status: 'pending',
-            initials: 'EW',
-            bgColor: 'bg-indigo-500'
+            initials: 'MP',
+            bgColor: 'bg-indigo-500',
+            phone: '+1 (555) 567-8901',
+            email: 'max.payne@email.com',
+            location: 'Video Call (Microsoft Teams)',
+            notes: 'Initial product walkthrough for potential new client.'
         },
         {
             id: '6',
@@ -66,7 +86,11 @@ const AppointmentsScreen = () => {
             time: '1:30 PM',
             status: 'rejected',
             initials: 'DC',
-            bgColor: 'bg-indigo-500'
+            bgColor: 'bg-indigo-500',
+            phone: '+1 (555) 678-9012',
+            email: 'david.chen@email.com',
+            location: 'Office - Room 105',
+            notes: 'Technical consultation regarding API integration issues.'
         }
     ];
 
@@ -80,7 +104,7 @@ const AppointmentsScreen = () => {
                 <View className="flex-row items-center gap-3">
                     <TouchableOpacity
                         className="w-10 h-10 rounded-full bg-blue-500 items-center justify-center"
-                        onPress={() => router.push('/')}
+                        onPress={() => router.back()}
                     >
                         <ArrowLeft size={20} color="#000" strokeWidth={2} />
                     </TouchableOpacity>
@@ -106,16 +130,25 @@ const AppointmentsScreen = () => {
                 contentContainerStyle={{ paddingBottom: 20 }}
             >
                 {appointments.map((appointment) => (
-                    <AppointmentButtonCard
-                        key={appointment.id}
-                        name={appointment.name}
-                        type={appointment.type}
-                        date={appointment.date}
-                        time={appointment.time}
-                        status={appointment.status}
-                        initials={appointment.initials}
-                        bgColor={appointment.bgColor}
-                    />
+
+                    <TouchableOpacity  key={appointment.id}
+                                       activeOpacity={0.7}
+                                       onPress={() => router.push({
+                                           pathname: './appointmentsDetailsScreen',
+                                           params: appointment
+                                       })}>
+
+                        <AppointmentButtonCard
+                            name={appointment.name}
+                            type={appointment.type}
+                            date={appointment.date}
+                            time={appointment.time}
+                            status={appointment.status}
+                            initials={appointment.initials}
+                            bgColor={appointment.bgColor}
+
+                        />
+                    </TouchableOpacity>
                 ))}
             </ScrollView>
         </SafeAreaView>
