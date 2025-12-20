@@ -70,7 +70,7 @@ export default function HomeScreen() {
                 {/* Quick Actions Component */}
                 <View className="pt-4">
                     <QuickActions
-                        onMessagePress={() => router.push('/messages')}
+                        onMessagePress={() => router.push('/conversationsListScreen')}
                         onAppointmentPress={() => router.push('/appointmentsScreen')}
                         onContactPress={() => router.push('/appointmentsDetailsScreen')}
                         onCampaignPress={() => router.push('/profileScreen')}
